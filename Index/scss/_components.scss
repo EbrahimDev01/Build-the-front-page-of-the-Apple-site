@@ -1,0 +1,60 @@
+.module-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    
+    &-description{
+        color: $color-gray-description;
+        text-align: center;
+    }
+    
+    &-links{
+        color:$color-blue;
+        font-size: 20px;
+        &-right{
+            margin-left:32px;
+        }
+
+        &:hover{
+            color:$color-blue;
+            text-decoration: underline!important;
+        }
+    }
+}
+
+@mixin unit-wrapper($img,
+        $color-title:black,
+        $color-sub-title:black,
+        $font-size-title:55px,
+        $font-size-sub-title:1,
+        $height:580px,
+        $padding-top:40px,
+        $background-position:center,
+        $background-size:cover,
+        $margin-bottom:15px) {
+
+        height: $height;//85vh
+        background:url($img) no-repeat $background-position;//'/Images/hero_ipad_pro__gl982dtu49im_large.jpg'
+        background-size: $background-size ;
+        padding-top:$padding-top ;//40px
+        margin-bottom:$margin-bottom;
+        .module-content-title,.module-content-sub-title{
+            color:$color-title;//white
+            text-align: center;
+        }
+        .module-content-title{
+            font-size: $font-size-title;//55px
+            color:$color-title;
+        }
+        .module-content-sub-title{
+            @if $font-size-title==1{
+                font-size: $font-size-title/2;
+            }
+            @else{
+                font-size: $font-size-sub-title;
+            }
+            color:$color-sub-title;
+        }
+        
+}

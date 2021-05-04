@@ -1,0 +1,102 @@
+.index-nav{
+    background-color: black;
+    position: fixed;
+    left: 0;
+    right: 0;
+    opacity: .8;
+    z-index: 99999999999999999999;
+    &-menu{
+        display: flex;
+        color:white;
+        justify-content: space-evenly;
+        margin-bottom: 0;
+        &-item-link{
+            padding:10px 20px;
+            display: block;
+            font-size: 14px;
+            opacity: .8;
+            &:hover{
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.ipad-pro-section{
+    @include unit-wrapper('/Images/hero_ipad_pro__gl982dtu49im_large.jpg',white,white);    
+}
+
+.iphon-12-purple-section{
+    @include unit-wrapper('/Images/hero_iphone_12_purple__eybnx2ju5mky_largetall.jpg');
+}
+
+.imac-section{
+    @include unit-wrapper('/Images/hero_imac_avail__zbofyl96mzmm_mediumtall.jpg');
+}
+.watch-section{
+    @include unit-wrapper('/Images/promo_watch_series_6_lte__f8lrasjnry2y_medium.jpg',white,red,35px,15px,500px,5px);    
+    .fa-apple{
+        font-size: 35px!important;
+    }
+}
+
+.AriTag-section{
+    @include unit-wrapper('/Images/promo_airtag__e6b73a64nno2_small.jpg',black,black,35px,15px,500px,5px);   
+}
+
+.moms-day-section{
+    @include unit-wrapper('/Images/tile_lastchance__eos89elmgi6a_small.jpg',black,black,35px,15px,550px,5px);
+    .module-content-sub-title{
+        max-width: 330px;
+    }
+    .module-content-title{
+        max-width: 300px;
+    }
+    background-image:url('/Images/tile_lastchance__eos89elmgi6a_large.jpg') 
+}
+
+.arcade-section{
+    @include unit-wrapper('/Images/promo_arcade_wonderbox__emq7ob1vhtw2_large.jpg',black,black,35px,15px,500px,5px);    
+    
+    .fa-apple{
+        font-size: 35px!important;
+    }
+}
+
+.tv-section{
+    @include unit-wrapper('/Images/promo_tile_tv4k__cbz6fpnn6kz6_large.jpg',black,black,35px,15px,500px,5px);
+    .module-content-sub-title{
+        max-width: 300px;
+    }
+    .fa-apple,.module-content-sub-title{
+        font-size: 35px!important;
+    }
+}
+
+.tv-plus-section{
+    @include unit-wrapper('/Images/promo_mosquito_coast__fzo6l5h2r42u_large.jpg',white,white,35px,15px,500px,5px);
+    position: relative;
+    .module-content{
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .fa-apple,.module-content-sub-title{
+        font-size: 35px!important;
+    }
+}
+
+
+
+footer.footer{
+    background-color: $color-light-gray-footer;
+    padding:35px 0;
+    color:$color-gray-description;
+    p{
+        font-size: 12px!important;
+    }
+    .text-content{
+        border-bottom: 1px solid $color-gray-description;
+    }
+}
