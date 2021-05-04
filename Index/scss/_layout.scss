@@ -23,40 +23,115 @@
 }
 
 .ipad-pro-section{
-    @include unit-wrapper('/Images/hero_ipad_pro__gl982dtu49im_large.jpg',white,white);    
+    @include unit-wrapper(
+    $img:'/Images/hero_ipad_pro__gl982dtu49im_large.jpg',
+    $color-title:white,
+    $color-sub-title:white,
+    $font-size-title:50px,
+    $font-size-sub-title:1,
+    $height:700px,
+
+    $margin-bottom:20px,
+    $padding-top:20px
+    );
 }
 
 .iphon-12-purple-section{
-    @include unit-wrapper('/Images/hero_iphone_12_purple__eybnx2ju5mky_largetall.jpg');
+    @include unit-wrapper(
+        $img:'/Images/hero_iphone_12_purple__eybnx2ju5mky_largetall.jpg',
+        $color-title:black,
+        $color-sub-title:black,
+        $font-size-title:50px,
+        $font-size-sub-title:1,
+        $height:700px,
+    
+    
+        $margin-bottom:20px,
+        $padding-top:20px
+    ); 
 }
 
 .imac-section{
-    @include unit-wrapper('/Images/hero_imac_avail__zbofyl96mzmm_mediumtall.jpg');
+    @include unit-wrapper(
+        $img:'/Images/hero_imac_avail__zbofyl96mzmm_large.jpg',
+        $color-title:black,
+        $color-sub-title:black,
+        $font-size-title:50px,
+        $font-size-sub-title:1,
+        $height:700px,
+    
+    
+        $margin-bottom:20px,
+        $padding-top:20px
+    ); 
 }
 .watch-section{
-    @include unit-wrapper('/Images/promo_watch_series_6_lte__f8lrasjnry2y_medium.jpg',white,red,35px,15px,500px,5px);    
+    @include unit-wrapper(
+        $img:'/Images/promo_watch_series_6_lte__f8lrasjnry2y_medium.jpg',
+        $color-title:white,
+        $color-sub-title:red,
+        $font-size-title:35px,
+        $font-size-sub-title:15px,
+        $height:500px,
+    
+    
+        $margin-bottom:20px,
+        $padding-top:20px
+    ); 
+
     .fa-apple{
         font-size: 35px!important;
     }
 }
 
-.AriTag-section{
-    @include unit-wrapper('/Images/promo_airtag__e6b73a64nno2_small.jpg',black,black,35px,15px,500px,5px);   
+.aritag-section{
+    @include unit-wrapper(
+        $img:'/Images/promo_airtag__e6b73a64nno2_small.jpg',
+        $color-title:black,
+        $color-sub-title:black,
+        $font-size-title:35px,
+        $font-size-sub-title:15px,
+        $height:500px,
+    
+    
+        $margin-bottom:20px,
+        $padding-top:20px
+    ); 
 }
 
 .moms-day-section{
-    @include unit-wrapper('/Images/tile_lastchance__eos89elmgi6a_small.jpg',black,black,35px,15px,550px,5px);
+    @include unit-wrapper(
+        $img:'/Images/tile_lastchance__eos89elmgi6a_large.jpg',
+        $color-title:black,
+        $color-sub-title:black,
+        $font-size-title:30px,
+        $font-size-sub-title:15px,
+        $height:500px,
+        $margin-bottom:20px,
+        $padding-top:20px
+    ); 
+
     .module-content-sub-title{
         max-width: 330px;
     }
     .module-content-title{
         max-width: 300px;
     }
-    background-image:url('/Images/tile_lastchance__eos89elmgi6a_large.jpg') 
 }
 
 .arcade-section{
-    @include unit-wrapper('/Images/promo_arcade_wonderbox__emq7ob1vhtw2_large.jpg',black,black,35px,15px,500px,5px);    
+    @include unit-wrapper(
+        $img:'/Images/promo_arcade_wonderbox__emq7ob1vhtw2_large.jpg',
+        $color-title:black,
+        $color-sub-title:black,
+        $font-size-title:35px,
+        $font-size-sub-title:15px,
+        $height:500px,
+    
+    
+        $margin-bottom:20px,
+        $padding-top:20px
+    ); 
     
     .fa-apple{
         font-size: 35px!important;
@@ -64,7 +139,18 @@
 }
 
 .tv-section{
-    @include unit-wrapper('/Images/promo_tile_tv4k__cbz6fpnn6kz6_large.jpg',black,black,35px,15px,500px,5px);
+    @include unit-wrapper(
+        $img:'/Images/promo_tile_tv4k__cbz6fpnn6kz6_large.jpg',
+        $color-title:black,
+        $color-sub-title:black,
+        $font-size-title:35px,
+        $font-size-sub-title:15px,
+        $height:500px,
+    
+    
+        $margin-bottom:20px,
+        $padding-top:20px
+    ); 
     .module-content-sub-title{
         max-width: 300px;
     }
@@ -74,7 +160,19 @@
 }
 
 .tv-plus-section{
-    @include unit-wrapper('/Images/promo_mosquito_coast__fzo6l5h2r42u_large.jpg',white,white,35px,15px,500px,5px);
+    @include unit-wrapper(
+        $img:'/Images/promo_mosquito_coast__fzo6l5h2r42u_large.jpg',
+        $color-title:white,
+        $color-sub-title:white,
+        $font-size-title:35px,
+        $font-size-sub-title:15px,
+        $height:500px,
+    
+    
+        $margin-bottom:20px,
+        $padding-top:20px
+    ); 
+    
     position: relative;
     .module-content{
         position: absolute;
@@ -93,10 +191,70 @@ footer.footer{
     background-color: $color-light-gray-footer;
     padding:35px 0;
     color:$color-gray-description;
-    p{
-        font-size: 12px!important;
-    }
+    
     .text-content{
-        border-bottom: 1px solid $color-gray-description;
+        p{
+            font-size: 12px!important;
+        }
     }
+
+    .lists-footer{
+        margin:20px;
+    }
+}
+
+
+
+@media (max-width:1200px){
+    
+    .say-product-full{
+
+    }
+    
+    .say-product-half{
+        height: 400px;
+        padding:0;
+        .module-content{
+            padding:15px;
+        }
+        .module-content-title{
+            font-size: 26px!important;
+        }
+        .module-content-sub-title{
+            font-size: 14px!important;
+        }
+        .module-content-description{
+            font-size: 14px!important;
+        }
+        .module-content-links{
+            font-size: 14px!important;
+        }
+    }
+        // .watch-section{
+        //     .module-content-title{
+        //         font-size: 30px!important;
+        //     }
+        //     .module-content-sub-title{
+    
+        //     }
+            
+        // }
+        
+        // .aritag-section{
+        // }
+        
+        // .moms-day-section{
+        // }
+        
+        // .arcade-section{
+            
+        // }
+        
+        // .tv-section{
+            
+        // }
+        
+        // .tv-plus-section{
+            
+        // }
 }

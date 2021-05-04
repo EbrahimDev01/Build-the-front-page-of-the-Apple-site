@@ -11,7 +11,8 @@
     
     &-links{
         color:$color-blue;
-        font-size: 20px;
+        font-size: 15px;
+        margin-top:15px;
         &-right{
             margin-left:32px;
         }
@@ -23,20 +24,22 @@
     }
 }
 
-@mixin unit-wrapper($img,
-        $color-title:black,
-        $color-sub-title:black,
-        $font-size-title:55px,
-        $font-size-sub-title:1,
-        $height:580px,
-        $padding-top:40px,
-        $background-position:center,
-        $background-size:cover,
-        $margin-bottom:15px) {
+
+@mixin unit-wrapper(
+    $img,
+    $color-title:white,
+    $color-sub-title:white,
+    $font-size-title:50px,
+    $font-size-sub-title:1,
+    $height:85vh,
+    $margin-bottom:20px,
+    $padding-top:20px) {
+
+        width: 100%;
 
         height: $height;//85vh
-        background:url($img) no-repeat $background-position;//'/Images/hero_ipad_pro__gl982dtu49im_large.jpg'
-        background-size: $background-size ;
+        background:url($img) no-repeat bottom;//'/Images/hero_ipad_pro__gl982dtu49im_large.jpg'
+        background-size: auto 100% !important ;
         padding-top:$padding-top ;//40px
         margin-bottom:$margin-bottom;
         .module-content-title,.module-content-sub-title{
@@ -57,4 +60,9 @@
             color:$color-sub-title;
         }
         
+}
+
+.title-list-footer{
+    color: black !important;
+    font-weight: 600;
 }
